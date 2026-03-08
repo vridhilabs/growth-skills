@@ -1,0 +1,112 @@
+{
+    "social_media_templates": {
+        "x_twitter": [
+            {
+                "id": "binary_choice",
+                "label": "X: Binary Choice",
+                "description": "Direct instruction, optimal path with metric, and a sharp binary conclusion.",
+                "prompt": "Line 1: Direct instruction (Ditch X, use Y).\n\nLine 2: The optimal path with exact metric.\n\nLine 3: 'Binary choice: adapt or fail.' or similar punchy binary."
+            },
+            {
+                "id": "upgrade_contrast",
+                "label": "X: Upgrade Contrast",
+                "description": "Negative outcome vs. positive upgrade with stats.",
+                "prompt": "Line 1: The negative outcome/downgrade with exact stats.\n\nLine 2: Empty line.\n\nLine 3: The positive upgrade/shift with exact stats."
+            },
+            {
+                "id": "unpopular_opinion",
+                "label": "X: Unpopular Opinion",
+                "description": "Bold contrarian take with its specific implication.",
+                "prompt": "Line 1: Start with 'Unpopular opinion:' or similar signal of contrarian take.\nLine 2: State the bold, specific uncomfortable truth. No hedging.\nLine 3: The implication — why this matters and what most people get wrong as a result."
+            },
+            {
+                "id": "thread_opener_stat",
+                "label": "X: Thread Opener (Stat)",
+                "description": "Hook using a shocking statistic to lead into a thread.",
+                "prompt": "Line 1: Shocking stat (e.g., '97% of startups fail because of X.').\n\nLine 2: 'After auditing 100+ labs, here is the pattern I found:'\n\nLine 3: 'A thread 🧵'"
+            }
+        ],
+        "linkedin": [
+            {
+                "id": "li_insight_deepdive",
+                "label": "LinkedIn: Tactical Deep-dive",
+                "description": "Paragraph-based industry analysis with bulleted takeaways.",
+                "prompt": "Line 1: High-level tactical hook related to industry shifts.\n\nParagraph 1: Background context — why this matters now (2-3 sentences).\n\nBullet Points: 3-5 specific, bulleted takeaways or observations.\n\nClosing: Strategic takeaway or open-ended question for the network."
+            }
+        ],
+        "minimalist_frames": [
+            {
+                "id": "reframe",
+                "label": "Strategic Reframe",
+                "description": "Flip what someone is doing into what they should be doing. Short, punchy.",
+                "prompt": "Constraint: Under 10 words. Single sentence. No period. Lowercase preferred.\n\nStructure: [Current state] are [Negative outcome]. Or [Concept]: [New Perspective].\n\nExample: 'overthinkers are underpaid'"
+            },
+            {
+                "id": "parallel",
+                "label": "Parallel Declaration",
+                "description": "Contrast X and Y using identical sentence structures.",
+                "prompt": "Constraint: Minimalist. Maximum 12 words. Land on a noun.\n\nStructure: [X] does [A]. [Y] does [B].\n\nExample: 'amateurs focus on the strike. pros focus on the swing.'"
+            },
+            {
+                "id": "paradox",
+                "label": "Paradox Reveal",
+                "description": "State a counter-intuitive truth that reveals a deeper logic.",
+                "prompt": "Constraint: Absolute declaration. Use a colon if possible.\n\nStructure: [Condition]: [Unexpected Result].\n\nExample: 'the more you charge: the less they complain'"
+            },
+            {
+                "id": "math",
+                "label": "Math/Logic Quantifier",
+                "description": "Quantify abstract ideas using simple math symbols (+, -, x, /).",
+                "prompt": "Constraint: Non-verbal where possible. Uses math comparison.\n\nStructure: [Concept A] + [Concept B] = [Result]. Or [A] vs [B].\n\nExample: 'leverage: 0 to 1 vs 1 to n'"
+            },
+            {
+                "id": "conditional",
+                "label": "Conditional Reveal",
+                "description": "An 'If X, surprising Y' setup that challenges standard assumptions.",
+                "prompt": "Constraint: Start with 'If'. Maximum 10 words.\n\nStructure: If [Standard Path], [Surprising Result].\n\nExample: 'if you want to multiply: divide'"
+            }
+        ]
+    },
+    "email_templates": {
+        "cold_outreach": [
+            {
+                "id": "email_pain_point",
+                "label": "Email: Direct Pain Point",
+                "description": "Solve a specific problem you spotted for them.",
+                "prompt": "Subject: Found a gap in your [Process/Feature]\n\nHi [Name],\n\nNoticed [Specific Observation]. \n\nI built a [Solution] that handles exactly this. It usually saves [Metric] for labs like yours.\n\nWould you be against a 5-min chat next week to see how it fits?\n\nBest,\n[Your Name]"
+            },
+            {
+                "id": "email_pattern_match",
+                "label": "Email: Pattern Match",
+                "description": "Leverage a competitor's success to pique interest.",
+                "prompt": "Subject: How [Competitor] is handling [Problem]\n\nHi [Name],\n\nI noticed you are currently using [Tool/Method] for [Problem].\n\nI recently helped [Competitor/Similar Company] switch to [Your Solution], and they saw a [Metric] improvement in [KPI].\n\nI suspect we could do the same for you. Open to a quick intro?\n\nBest,\n[Your Name]"
+            }
+        ],
+        "newsletter": [
+            {
+                "id": "newsletter_bridge",
+                "label": "Email: Newsletter Bridge",
+                "description": "High-CTR teaser for long-form content.",
+                "prompt": "Subject: [Topic] is changing. Are you ready?\n\nHi [Name],\n\nEveryone is looking at [Common Distraction].\n\nThe real shift is happening in [Hidden Signal].\n\nI just broke down the full playbook on how to navigate this.\n\nRead the full breakdown here: [LINK]\n\nStay sharp,\n[Your Name]"
+            }
+        ]
+    },
+    "dm_templates": {
+        "linkedin_dm": [
+            {
+                "id": "li_dm_low_friction",
+                "label": "LI DM: Low Friction Curiosity",
+                "description": "Non-salesy, high-reponse intent start.",
+                "prompt": "Hey [Name], saw your post about [Topic]. \n\nReally interesting take on [Specific Point]. \n\nAre you seeing [Specific Trend] play out in your niche too? Curious about your perspective."
+            }
+        ],
+        "x_dm": [
+            {
+                "id": "x_dm_founder_chat",
+                "label": "X DM: Founder Alignment",
+                "description": "Direct intro targeting other founders in the space.",
+                "prompt": "Hi [Name], I've been following [Brand] for a while. \n\nWe're building [Your Project] and I think there's a huge overlap with your audience on [Specific Problem]. \n\nWould love to swap notes on distribution if you have 10 mins this week. Open to it?"
+            }
+        ]
+    }
+}
