@@ -1,89 +1,84 @@
-# 📈 Growth Skills
+# growth-skills
 
-An open-source collection of high-engagement templates for X (Twitter), LinkedIn, Email, and DM outreach. Designed to be used as a standalone CLI tool or integrated into AI-driven content pipelines.
+A collection of GTM skills for founders, operators, and builders. Add them to your AI agent and run them on demand.
 
-## 🚀 Overview
+These skills cover the full go-to-market motion — from scoring leads to writing cold emails to mapping competitors.
 
-Growth Skills is a curated library of "proven" content structures and outreach frameworks. It eliminates the "blank page" problem for founders, builders, and operators.
+---
 
-### 🪝 Social Hooks
+## Skills
 
-#### X (Twitter)
-- **Binary Choice**: Direct instruction, optimal path with metric, and a sharp binary conclusion.
-- **Upgrade Contrast**: Negative outcome vs. positive upgrade with stats.
-- **Unpopular Opinion**: Bold contrarian take with its specific implication.
-- **Thread Opener (Stat)**: Hook using a shocking statistic to lead into a thread.
+### Acquisition
 
-#### LinkedIn
-- **Tactical Deep-dive**: Paragraph-based industry analysis with bulleted takeaways.
+**score-lead** — Score any inbound lead against your ICP. Get a 0–100 score, ICP fit, intent level, next action, and CRM tags.
 
-#### Minimalist Frames
-- **Strategic Reframe**: Flip current state into new perspective (e.g., 'overthinkers are underpaid').
-- **Parallel Declaration**: Identical sentence structures to contrast pros vs. amateurs.
-- **Paradox Reveal**: Counter-intuitive truths that reveal deep logic.
-- **Math Quantifier**: Using simple math symbols (+, -, x, /) to quantify abstract ideas.
-- **Conditional Reveal**: Surprising 'If/Then' setups that challenge assumptions.
+```
+npx skills@latest add vridhilabs/growth-skills/score-lead
+```
 
-### 📐 Rules of Compression (Meta-Style)
-*Extracted from analyzing high-performance signal frames.*
+**write-cold-email** — Turn a prospect + one hook into 3 email variations (pain, curiosity, proof) + a 2-step follow-up sequence.
 
-1. **Drop the Period**: Bare-word endings get ~20% more engagement.
-2. **Land on a Noun**: Final word should be a thing, not an action.
-3. **Lowercase as Register**: Use lowercase for a "thinking out loud" vibe.
-4. **Use Colons as Pivots**: Keeps both sides short (2-4 words).
-5. **No Clutter**: No tribe-signaling, no "diary" entries, and no cliches.
+```
+npx skills@latest add vridhilabs/growth-skills/write-cold-email
+```
 
-### ✉️ Outreach Frameworks
+---
 
-#### Email (Cold Outreach & Newsletter)
-- **Direct Pain Point**: Solve a specific problem you spotted for them.
-- **Pattern Match**: Leverage a competitor's success to pique interest.
-- **Newsletter Bridge**: High-CTR teaser for long-form content.
+### Strategy
 
-#### DM (Direct Messages)
-- **Low Friction Curiosity**: Non-salesy, high-response intent start for LinkedIn.
-- **Founder Alignment**: Direct intro targeting other founders on X.
+**gtm-roadmap** — Paste a job description and get a Founder-Operator GTM strategy: workstreams, 3-month phased roadmap, tool stack, and KPIs.
 
-## 🛠️ Installation
+```
+npx skills@latest add vridhilabs/growth-skills/gtm-roadmap
+```
+
+**competitor-map** — Map a competitor's GTM from their public footprint. Get their positioning, growth channels, hiring signals, gaps, and a counter-messaging battle card.
+
+```
+npx skills@latest add vridhilabs/growth-skills/competitor-map
+```
+
+---
+
+### Content
+
+**content-engine** — One signal → LinkedIn post + X thread + Email snippet. Platform-native. Voice-matched. Compression rules applied.
+
+```
+npx skills@latest add vridhilabs/growth-skills/content-engine
+```
+
+---
+
+## CRM Integration
+
+These skills are designed to connect to **[Twenty CRM](https://github.com/twentyhq/twenty)** — free, open-source, self-hosted.
+
+`score-lead` output maps directly to Twenty CRM opportunity fields. See [`crm/twenty_crm_setup.md`](crm/twenty_crm_setup.md) for the full pipeline setup.
+
+---
+
+## Templates
+
+The original template library (social hooks, outreach frameworks, compression rules) lives in [`src/growth_skills/templates/`](src/growth_skills/templates/).
 
 ```bash
-# Clone the repository
-git clone https://github.com/vridhilabs/growth-skills.git
-cd growth-skills
-
-# Install the CLI tool locally
 pip install -e .
-```
-
-## 📖 Usage
-
-### List all templates
-```bash
 growth-skills list
-```
-
-### Get a specific template by ID
-```bash
 growth-skills get --id binary_choice --category social_media_templates
 ```
 
-### Get a random DM template
-```bash
-growth-skills random --category dm_templates
-```
+---
 
-## 🧩 Structure
+## Contributing
 
-- `src/growth_skills/templates/templates.json`: The core library of templates.
-- `src/growth_skills/cli.py`: The CLI entry point.
+Each skill is a single `SKILL.md` file inside a folder at the root of this repo.
 
-## 🤝 Contributing
+To add a skill:
+1. Create a folder with a short, verb-first name (e.g. `score-lead`, `write-brief`)
+2. Add a `SKILL.md` — explain what to provide, what you get back, and show an example
+3. Submit a PR
 
-We are actively looking for more patterns! If you have a specific structure that consistently drives results:
-1. Fork this repo.
-2. Add your framework to `templates.json`.
-3. Submit a PR.
+---
 
-## 📄 License
-
-MIT License. See `LICENSE` for details.
+*Built by [Vridhi Labs](https://github.com/vridhilabs)*
