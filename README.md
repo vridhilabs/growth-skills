@@ -1,84 +1,51 @@
 # growth-skills
 
-A collection of GTM skills for founders, operators, and builders. Add them to your AI agent and run them on demand.
-
-These skills cover the full go-to-market motion — from scoring leads to writing cold emails to mapping competitors.
+A collection of AI-native GTM skills for founders, operators, and builders. These are self-contained prompt-engine modules designed to be plugged directly into your AI agent (Claude, GPT, RaGa, etc.).
 
 ---
 
-## Skills
+## How to Use These Skills
 
-### Acquisition
+Since we are in the early days, there are three ways to "fetch" a skill:
 
-**score-lead** — Score any inbound lead against your ICP. Get a 0–100 score, ICP fit, intent level, next action, and CRM tags.
+### 1. The Quickest Way (Copy-Paste)
+Every skill is a single `SKILL.md` file. Simply open the folder for the skill you want, copy the content of `SKILL.md`, and paste it into your agent's system instructions or knowledge base.
 
-```
-npx skills@latest add vridhilabs/growth-skills/score-lead
-```
-
-**write-cold-email** — Turn a prospect + one hook into 3 email variations (pain, curiosity, proof) + a 2-step follow-up sequence.
-
-```
-npx skills@latest add vridhilabs/growth-skills/write-cold-email
+### 2. For Local Agents (Clone)
+If you use a local AI IDE or agent (like RaGa or Claude Code), clone this repo and point it to the skill folder.
+```bash
+git clone https://github.com/vridhilabs/growth-skills.git
 ```
 
----
-
-### Strategy
-
-**gtm-roadmap** — Paste a job description and get a Founder-Operator GTM strategy: workstreams, 3-month phased roadmap, tool stack, and KPIs.
-
-```
-npx skills@latest add vridhilabs/growth-skills/gtm-roadmap
-```
-
-**competitor-map** — Map a competitor's GTM from their public footprint. Get their positioning, growth channels, hiring signals, gaps, and a counter-messaging battle card.
-
-```
-npx skills@latest add vridhilabs/growth-skills/competitor-map
+### 3. Automated Download (Coming Soon)
+We are building a dedicated CLI to fetch these directly. For now, you can use `curl` to grab any skill:
+```bash
+# Example: Download the 'score-lead' skill to your current directory
+curl -L https://raw.githubusercontent.com/vridhilabs/growth-skills/main/score-lead/SKILL.md > score-lead.md
 ```
 
 ---
 
-### Content
+## The GTM Skills Library
 
-**content-engine** — One signal → LinkedIn post + X thread + Email snippet. Platform-native. Voice-matched. Compression rules applied.
+### 🔱 Acquisition
+**[score-lead](score-lead/)** — Score any inbound lead against your ICP. Get a 0–100 score, fit rating, and CRM tags.
+**[write-cold-email](write-cold-email/)** — Turn a prospect + hook into 3 email variations + a follow-up sequence.
 
-```
-npx skills@latest add vridhilabs/growth-skills/content-engine
-```
+### 🔱 Strategy
+**[gtm-roadmap](gtm-roadmap/)** — Turn a job description into a 3-month Founder-Operator strategy with tools and KPIs.
+**[competitor-map](competitor-map/)** — Map a competitor's GTM from their public footprint + get a sales battle card.
+
+### 🔱 Content
+**[content-engine](content-engine/)** — 1 signal → LinkedIn post + X thread + Email snippet. Platform-native and voice-matched.
 
 ---
 
 ## CRM Integration
 
-These skills are designed to connect to **[Twenty CRM](https://github.com/twentyhq/twenty)** — free, open-source, self-hosted.
-
-`score-lead` output maps directly to Twenty CRM opportunity fields. See [`crm/twenty_crm_setup.md`](crm/twenty_crm_setup.md) for the full pipeline setup.
-
----
-
-## Templates
-
-The original template library (social hooks, outreach frameworks, compression rules) lives in [`src/growth_skills/templates/`](src/growth_skills/templates/).
-
-```bash
-pip install -e .
-growth-skills list
-growth-skills get --id binary_choice --category social_media_templates
-```
+These skills connect natively to **[Twenty CRM](https://github.com/twentyhq/twenty)** (Open-Source/Self-Hosted).  
+See the [Twenty CRM Setup Guide](crm/twenty_crm_setup.md) to build your own autonomous GTM pipeline.
 
 ---
 
-## Contributing
-
-Each skill is a single `SKILL.md` file inside a folder at the root of this repo.
-
-To add a skill:
-1. Create a folder with a short, verb-first name (e.g. `score-lead`, `write-brief`)
-2. Add a `SKILL.md` — explain what to provide, what you get back, and show an example
-3. Submit a PR
-
----
-
-*Built by [Vridhi Labs](https://github.com/vridhilabs)*
+*Built by [Vridhi Labs](https://vridhilabs.ai)*
