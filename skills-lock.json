@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "skills": {
+    "competitor-map": {
+      "source": "vridhilabs/growth-skills",
+      "sourceType": "github",
+      "computedHash": "7973d6433f66b25b375beeef0accf7cec58bf6afb223c1d3938b991bcad017c2"
+    },
+    "content-engine": {
+      "source": "vridhilabs/growth-skills",
+      "sourceType": "github",
+      "computedHash": "7dc145c934dd72e4afccd7f933b93fdd838624ebc75d7f9516c149e5ca710cca"
+    },
+    "gtm-roadmap": {
+      "source": "vridhilabs/growth-skills",
+      "sourceType": "github",
+      "computedHash": "afbb7cf1d46c7dcace9d72a95cc546724d0a074d999d311634b98ac75eef51bf"
+    },
+    "score-lead": {
+      "source": "vridhilabs/growth-skills",
+      "sourceType": "github",
+      "computedHash": "5806695ac9a02530cf7995a382b3e20c9f0cceba9c994373514ed170f697017a"
+    },
+    "write-cold-email": {
+      "source": "vridhilabs/growth-skills",
+      "sourceType": "github",
+      "computedHash": "6cd003550da83d14f1f23a9a0f302c98bb31d16b2c1f9c7633669675b3d89154"
+    }
+  }
+}

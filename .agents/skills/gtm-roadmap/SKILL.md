@@ -37,13 +37,13 @@ Turn a job description into a Founder-Operator GTM strategy. Paste the JD (or gi
 ## Example
 
 **Input:**
-> [Company] JD: Growth Marketing Manager, AI Systems + Paid Media, [CRM], 5-8 years exp
+> [Medvarsity JD: Growth Marketing Manager, AI Systems + Paid Media, Zoho CRM, 5-8 years exp]
 
 **Output:**
 
 **Month 1 Goal:** Establish the intelligence layer
-- Actions: Audit [CRM] data quality · Set up dashboards · Map the full funnel from lead to conversion
-- Metric: Reporting latency reduced significantly
+- Actions: Audit Zoho CRM data quality · Set up CAC/ROAS dashboards · Map the full funnel from ad click to enrolment
+- Metric: Reporting latency cut from 5 days to same-day
 
 **Month 2 Goal:** First AI-native experiments live  
 - Actions: Deploy lead scoring on top 500 leads · Launch one PMAX campaign with AI creative iteration · Automate weekly performance digest

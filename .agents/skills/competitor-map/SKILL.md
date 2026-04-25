@@ -37,19 +37,19 @@ Map a competitor's GTM from their public footprint. Give me a competitor name or
 ## Example
 
 **Input:**
-> Competitor: [Big Competitor]. My product: [Your Product] (open-source, self-hosted).
+> Competitor: HubSpot. My product: Twenty CRM (open-source, self-hosted).
 
 **Output:**
 
 **Their claim:** "The easy-to-use CRM." Targets SMB, emphasizes all-in-one suite and integrations.
 
-**Gap:** Their pricing scales aggressively. Data lives in their cloud. No self-hosted option.
+**Gap:** HubSpot's pricing scales aggressively. Data lives in their cloud. No self-hosted option. Overkill for lean teams.
 
-**Your angle:** [Your Product] — your data, your server, no per-seat pricing. Built for operators who want control, not a SaaS subscription that grows faster than your revenue.
+**Your angle:** Twenty CRM — your data, your server, no per-seat pricing. Built for operators who want control, not a SaaS subscription that grows faster than your revenue.
 
 **Battle card:**
-- [Competitor Name] starts free, then hits you at high prices for the features you actually need
+- HubSpot starts free, then hits you at $800/mo for the features you actually need
 - Your data is in their cloud. Compliance headache waiting to happen.
-- [Your Product] is MIT-licensed. Fork it, extend it, own it.
+- Twenty is MIT-licensed. Fork it, extend it, own it.
 - No per-seat pricing. Scale your team, not your CRM bill.
 - Built for operators who know what they're doing, not onboarding wizards

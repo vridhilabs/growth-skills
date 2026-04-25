@@ -4,6 +4,7 @@ description: Score an inbound lead against your ICP. Get a 0–100 score, fit ra
 ---
 # Score Lead
 
+
 Score an inbound lead against your ICP. Tell me the lead's name, title, company, how they came in, and any behavior signals (email opens, page visits, replies). I'll return a score 0–100, ICP fit rating, intent level, recommended next action, and CRM tags.
 
 ## What to provide
@@ -31,7 +32,7 @@ CRM Tags: [senior-buyer, high-intent, pricing-signal]
 - **Intent signals**: Pricing page, demo request, multiple email opens, direct reply = strong intent
 - **Source weight**: referral > inbound > linkedin > ad
 
-## CRM mapping
+## CRM mapping (Twenty CRM)
 
 | Field | Maps to |
 |---|---|
@@ -42,7 +43,7 @@ CRM Tags: [senior-buyer, high-intent, pricing-signal]
 ## Example
 
 **Input:**
-> [Name], Head of Growth at [Company] (150 people), came in through LinkedIn. Visited our pricing page twice and replied to my cold email.
+> Jane Doe, Head of Growth at Acme (150 people), came in through LinkedIn. Visited our pricing page twice and replied to my cold email.
 
 **Output:**
 > Score: 78/100 · ICP Fit: Strong · Intent: High · Next Action: Demo

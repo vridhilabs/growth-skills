@@ -1,0 +1,53 @@
+#!/bin/zsh
+
+# Raga Growth Skills Manager
+# A wrapper for the official skills.sh CLI (npx skills)
+
+REPO="vridhilabs/growth-skills"
+COMMAND=$1
+SKILL_NAME=$2
+
+case $COMMAND in
+  "sync")
+    echo "🔄 Syncing all Growth Skills from $REPO..."
+    npx skills@latest add $REPO --all --agent antigravity -y
+    ;;
+  
+  "add")
+    if [ -z "$SKILL_NAME" ]; then
+      echo "❌ Please specify a skill name (e.g., ./raga-skills add score-lead)"
+      exit 1
+    fi
+    echo "📥 Adding skill: $SKILL_NAME..."
+    npx skills@latest add $REPO --skill $SKILL_NAME --agent antigravity -y
+    ;;
+
+  "list")
+    echo "📋 Currently installed skills for Antigravity:"
+    npx skills@latest list --agent antigravity
+    ;;
+
+  "update")
+    echo "🚀 Upgrading all installed skills..."
+    npx skills@latest update --agent antigravity -y
+    ;;
+
+  "remove")
+    if [ -z "$SKILL_NAME" ]; then
+      echo "🗑️ Removing ALL Growth Skills..."
+      npx skills@latest remove --all --agent antigravity -y
+    else
+      echo "🗑️ Removing skill: $SKILL_NAME..."
+      npx skills@latest remove --skill $SKILL_NAME --agent antigravity -y
+    fi
+    ;;
+
+  *)
+    echo "Usage: ./raga-skills [sync|add|list|update|remove]"
+    echo "  sync    - Install all growth skills"
+    echo "  add     - Add a specific skill by name"
+    echo "  list    - Show installed skills"
+    echo "  update  - Upgrade all skills to latest version"
+    echo "  remove  - Remove a skill or all skills"
+    ;;
+esac
