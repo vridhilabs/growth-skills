@@ -1,3 +1,7 @@
+---
+name: competitor-map
+description: Map a competitor's GTM from their public footprint + get a sales battle card.
+---
 # Competitor Map
 
 Map a competitor's GTM from their public footprint. Give me a competitor name or URL and I'll extract their positioning, growth channels, hiring signals, content themes, and gaps — plus a counter-messaging brief.

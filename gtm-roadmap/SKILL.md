@@ -1,3 +1,7 @@
+---
+name: gtm-roadmap
+description: Turn a job description into a 3-month Founder-Operator strategy with tools and KPIs.
+---
 # GTM Roadmap
 
 Turn a job description into a Founder-Operator GTM strategy. Paste the JD (or give me the URL) and I'll extract what the company actually needs, map it into workstreams, and give you a phased 3-month execution plan with tools and KPIs.

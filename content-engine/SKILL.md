@@ -1,3 +1,7 @@
+---
+name: content-engine
+description: 1 signal → LinkedIn post + X thread + Email snippet. Platform-native and voice-matched.
+---
 # Content Engine
 
 Turn one signal or idea into platform-native content for LinkedIn, X (Twitter), and Email. Give me a topic, URL, insight, or raw thought — I'll produce content natively formatted for each platform in your voice.

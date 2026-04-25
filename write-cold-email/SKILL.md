@@ -1,3 +1,7 @@
+---
+name: write-cold-email
+description: Turn a prospect + one hook into 3 email variations (pain, curiosity, proof).
+---
 # Write Cold Email
 
 Write a hyper-personalized cold email for a prospect. Give me their name, title, company, and one specific thing about them (a recent post, job listing, company news, or something from their website). Tell me who you are and what you want (demo, intro, partnership, job).

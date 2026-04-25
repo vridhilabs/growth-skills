@@ -1,4 +1,9 @@
+---
+name: score-lead
+description: Score an inbound lead against your ICP. Get a 0–100 score, fit rating, and CRM tags.
+---
 # Score Lead
+
 
 Score an inbound lead against your ICP. Tell me the lead's name, title, company, how they came in, and any behavior signals (email opens, page visits, replies). I'll return a score 0–100, ICP fit rating, intent level, recommended next action, and CRM tags.
 
